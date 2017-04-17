@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cmsc434.doorboardprototype.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/map_layer"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/profile_layer"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/calender"
+        android:id="@+id/calender_icon"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_toLeftOf="@id/calender_icon"
+        android:text="Office Hours"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room 212"
+        android:id="@+id/room_number"
+        android:layout_below="@id/calender_icon"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evan Golub"
+        android:id="@+id/name"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/title"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile"
+        android:id="@+id/profile"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Out"
+        android:visibility="gone"
+        android:id="@+id/status"
+        android:layout_below="@id/profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Message"
+        android:id="@+id/message_label"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_label"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:id="@+id/message"
+        android:padding="2dp"
+        android:text="Stuck In Traffic. Be there by 9:30."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:background="@drawable/back_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_mode"
+        android:text="Change View Mode (Debug Only)"
+        android:background="#19ff00"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_user"
+        android:text="Add User (DEBUG ONLY)"
+        android:background="#0a68ff"
+        android:visibility="invisible"
+        android:layout_below="@+id/view_mode"/>
+</RelativeLayout>
